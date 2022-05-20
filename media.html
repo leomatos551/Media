@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../lobo/styles.css">
+
+
+    <title>Calculo de Média</title>
+</head>
+<body>
+
+
+        <p>Digite 3 números para calcular a média:
+        </p>
+        <input type="text" id="a">
+        <input type="text" id="b">
+        <input type="text" id="c">
+
+        <button onclick="obterMedia()">
+        Calcular Média
+        </button>
+
+    <div id="resultado">
+
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    function obterMedia() {
+
+        var a = parseInt(document.getElementById("a").value);
+        var b = parseInt(document.getElementById("b").value);
+        var c = parseInt(document.getElementById("c").value);
+
+        var media = (a + b + c) / 3;
+
+        document.getElementById("resultado").innerHTML = "Resultado:"
+        + media;
+    }
+
+</script>
