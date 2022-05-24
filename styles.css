@@ -2,3 +2,9 @@ input, button {
     display: block;
     margin: 10px;
 }
+
+p {
+    display: block;
+    margin: 10px;
+    margin-right: 20px;
+}
